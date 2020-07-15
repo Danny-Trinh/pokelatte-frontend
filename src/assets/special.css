@@ -1,0 +1,18 @@
+.darken-0 {
+  filter: brightness(0);
+}
+.darken-1 {
+  filter: brightness(0.25);
+}
+.darken-2 {
+  filter: brightness(0.5);
+}
+.darken-3 {
+  filter: brightness(0.75);
+}
+.darken-4 {
+  filter: brightness(0.85);
+}
+.darken-5 {
+  filter: brightness(0.95);
+}
