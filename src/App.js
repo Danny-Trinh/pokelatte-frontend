@@ -67,27 +67,27 @@ class App extends Component {
     }
   }
 
-  async componentDidMount() {
-    if (localStorage.getItem("token")) {
-      this.setState({ isLoading: true });
-      try {
-        const json = await Axios({
-          method: "get",
-          url: "https://pokelatte-backend.herokuapp.com/api/user/",
-          headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
-        });
-        localStorage.setItem("username", json.data[0].username);
-        localStorage.setItem("id", json.data[0].id);
-        this.setState({
-          logged_in: true,
-          isLoading: false,
-        });
-        this.fetchPokemon();
-      } catch (error) {
-        this.setState({ error, isLoading: false });
-      }
-    }
-  }
+  // async componentDidMount() {
+  //   if (localStorage.getItem("token")) {
+  //     this.setState({ isLoading: true });
+  //     try {
+  //       const json = await Axios({
+  //         method: "get",
+  //         url: "https://pokelatte-backend.herokuapp.com/api/user/",
+  //         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
+  //       });
+  //       localStorage.setItem("username", json.data[0].username);
+  //       localStorage.setItem("id", json.data[0].id);
+  //       this.setState({
+  //         logged_in: true,
+  //         isLoading: false,
+  //       });
+  //       this.fetchPokemon();
+  //     } catch (error) {
+  //       this.setState({ error, isLoading: false });
+  //     }
+  //   }
+  // }
 
   handle_logout = () => {
     if (window.confirm("Are you sure you want to delete your account?  ")) {
@@ -97,78 +97,79 @@ class App extends Component {
   };
 
   render() {
-    const logged_in = this.state.logged_in;
+    return <div>HELLLLOOOO</div>;
+    //   const logged_in = this.state.logged_in;
 
-    if (this.state.isLoading) {
-      return (
-        <div className="flex h-screen">
-          <div className="m-auto text-5xl font-bold text-blue-700">
-            Fetching Data
-          </div>
-        </div>
-      );
-    } else if (!logged_in) {
-      return (
-        <React.Fragment>
-          <Router>
-            <Switch>
-              <Route path="/" exact>
-                <IntroPage
-                  setLogin={this.setLogin}
-                  userID={this.state.userID}
-                ></IntroPage>
-              </Route>
-              <Redirect to="/" />
-            </Switch>
-          </Router>
-        </React.Fragment>
-      );
-    } else if (this.state.pokemons.length === 0) {
-      return (
-        <SelectStarter
-          fetchPokemon={this.fetchPokemon.bind(this)}
-        ></SelectStarter>
-      );
-    } else {
-      return (
-        <React.Fragment>
-          <Router>
-            {!this.state.hideNav && (
-              <Navbar
-                handle_logout={this.handle_logout}
-                onMenuClick={this.onMenuClick}
-                menuLoaded={this.state.menuLoaded}
-              ></Navbar>
-            )}
-            <Switch>
-              <Route path="/" exact>
-                <YourPokemonPage
-                  pokemons={this.state.pokemons}
-                  fetchPokemon={this.fetchPokemon.bind(this)}
-                  menuOff={this.menuOff}
-                ></YourPokemonPage>
-              </Route>
-              <Route path="/inventory" exact>
-                <YourPokemonPage
-                  pokemons={this.state.pokemons}
-                  fetchPokemon={this.fetchPokemon.bind(this)}
-                  menuOff={this.menuOff}
-                ></YourPokemonPage>
-              </Route>
-              <Route path="/explore" exact>
-                <ExplorePage
-                  navOn={this.navOn}
-                  navOff={this.navOff}
-                  fetchPokemon={this.fetchPokemon.bind(this)}
-                  menuOff={this.menuOff}
-                ></ExplorePage>
-              </Route>
-              <Route component={ErrorPage}></Route>
-            </Switch>
-          </Router>
-        </React.Fragment>
-      );
-    }
+    //   if (this.state.isLoading) {
+    //     return (
+    //       <div className="flex h-screen">
+    //         <div className="m-auto text-5xl font-bold text-blue-700">
+    //           Fetching Data
+    //         </div>
+    //       </div>
+    //     );
+    //   } else if (!logged_in) {
+    //     return (
+    //       <React.Fragment>
+    //         <Router>
+    //           <Switch>
+    //             <Route path="/" exact>
+    //               <IntroPage
+    //                 setLogin={this.setLogin}
+    //                 userID={this.state.userID}
+    //               ></IntroPage>
+    //             </Route>
+    //             <Redirect to="/" />
+    //           </Switch>
+    //         </Router>
+    //       </React.Fragment>
+    //     );
+    //   } else if (this.state.pokemons.length === 0) {
+    //     return (
+    //       <SelectStarter
+    //         fetchPokemon={this.fetchPokemon.bind(this)}
+    //       ></SelectStarter>
+    //     );
+    //   } else {
+    //     return (
+    //       <React.Fragment>
+    //         <Router>
+    //           {!this.state.hideNav && (
+    //             <Navbar
+    //               handle_logout={this.handle_logout}
+    //               onMenuClick={this.onMenuClick}
+    //               menuLoaded={this.state.menuLoaded}
+    //             ></Navbar>
+    //           )}
+    //           <Switch>
+    //             <Route path="/" exact>
+    //               <YourPokemonPage
+    //                 pokemons={this.state.pokemons}
+    //                 fetchPokemon={this.fetchPokemon.bind(this)}
+    //                 menuOff={this.menuOff}
+    //               ></YourPokemonPage>
+    //             </Route>
+    //             <Route path="/inventory" exact>
+    //               <YourPokemonPage
+    //                 pokemons={this.state.pokemons}
+    //                 fetchPokemon={this.fetchPokemon.bind(this)}
+    //                 menuOff={this.menuOff}
+    //               ></YourPokemonPage>
+    //             </Route>
+    //             <Route path="/explore" exact>
+    //               <ExplorePage
+    //                 navOn={this.navOn}
+    //                 navOff={this.navOff}
+    //                 fetchPokemon={this.fetchPokemon.bind(this)}
+    //                 menuOff={this.menuOff}
+    //               ></ExplorePage>
+    //             </Route>
+    //             <Route component={ErrorPage}></Route>
+    //           </Switch>
+    //         </Router>
+    //       </React.Fragment>
+    //     );
+    //   }
   }
   navOn = () => {
     this.setState({ hideNav: false });
