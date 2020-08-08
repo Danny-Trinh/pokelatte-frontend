@@ -186,6 +186,7 @@
       "Here it is ladies and gentleman, the match you have all been waiting for!"
     ],
     "lvls": [
+      [20, 30],
       [30, 50],
       [50, 70],
       [80, 90]
