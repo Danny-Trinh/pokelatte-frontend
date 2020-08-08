@@ -173,7 +173,7 @@ export default class BattlePage extends Component {
       }
       await Axios({
         method: "post",
-        url: "/api/pokemon/",
+        url: "https://pokelatte-backend.herokuapp.com/api/pokemon/",
         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
         data: pokemonTemp,
       });
@@ -194,7 +194,7 @@ export default class BattlePage extends Component {
     try {
       await Axios({
         method: "put",
-        url: `/api/pokemon/level/${this.state.battle_pokemon["id"]}/`,
+        url: `https://pokelatte-backend.herokuapp.com/api/pokemon/level/${this.state.battle_pokemon["id"]}/`,
         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
         data: { level: levelArg, exp: expArg },
       });

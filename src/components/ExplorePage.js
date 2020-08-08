@@ -18,7 +18,9 @@ export default class ExplorePage extends Component {
   async fetchPokemon(pokemon, level, gender) {
     this.setState({ isLoading: true });
     try {
-      const result = await axios.get(`/api/v2/pokemon/${pokemon}/`);
+      const result = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${pokemon}/`
+      );
       this.setState({
         enemyPokemon: formatPokemon(result.data, level, gender),
         isLoading: false,
