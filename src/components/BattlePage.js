@@ -22,7 +22,7 @@ const confirmBtnClass =
 const btnClass =
   "border-2 border-teal-500 hover:border-teal-800 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-teal-300 rounded-full my-2 m-2";
 const disabledBtnClass =
-  "border-2 border-teal-500 hover:border-red-800 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-red-300 rounded-full my-2 sm:m-2";
+  "border-2 border-teal-500 hover:border-red-800 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-red-300 rounded-full my-2 m-2";
 const summmonDelay = 2;
 const staggerDelay = 1;
 const pokemonCatchDuration = 5;
