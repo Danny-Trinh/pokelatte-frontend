@@ -265,9 +265,9 @@ export default class BattlePage extends Component {
                 variants={pokemonState}
               ></motion.img>
             </motion.div>
-            <div className="absolute h-32 w-32 mr-4 sm:w-40 sm:h-40 sm:mr-12 z-50">
+            <div className="absolute flex h-32 w-32 mr-4 sm:w-40 sm:h-40 sm:mr-12 z-50">
               <motion.img
-                className="h-10 w-10 mx-auto mt-12 sm:mt-16"
+                className="h-10 w-10 m-auto"
                 src={Pokeball}
                 alt="pokeball"
                 animate={

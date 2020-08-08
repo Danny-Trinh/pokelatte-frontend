@@ -21,6 +21,7 @@ class IntroPage extends React.Component {
 
   async handle_signup() {
     try {
+      localStorage.clear();
       let json = await Axios({
         method: "post",
         url: "https://pokelatte-backend.herokuapp.com/user/create/",
