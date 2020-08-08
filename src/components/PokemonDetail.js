@@ -17,7 +17,7 @@ export default class DescBox extends Component {
         : pokemon;
       await Axios({
         method: "put",
-        url: `https://pokelatte-backend.herokuapp.com/api/pokemon/evolve/${this.props.pokemon["id"]}/`,
+        url: `/api/pokemon/evolve/${this.props.pokemon["id"]}/`,
         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
         data: { species: pokemon, name: nameArg },
       });
@@ -56,7 +56,7 @@ export default class DescBox extends Component {
     try {
       await Axios({
         method: "delete",
-        url: `https://pokelatte-backend.herokuapp.com/api/pokemon/${this.props.pokemon["id"]}/`,
+        url: `/api/pokemon/${this.props.pokemon["id"]}/`,
         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
       });
       this.props.fetchPokemon();

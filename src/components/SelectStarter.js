@@ -22,7 +22,7 @@ export default class SelectStarter extends Component {
       }
       await Axios({
         method: "post",
-        url: "https://pokelatte-backend.herokuapp.com/api/pokemon/",
+        url: "/api/pokemon/",
         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
         data: pokemonTemp,
       });

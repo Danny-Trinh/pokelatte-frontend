@@ -23,7 +23,7 @@ class IntroPage extends React.Component {
     try {
       let json = await Axios({
         method: "post",
-        url: "https://pokelatte-backend.herokuapp.com/user/create/",
+        url: "/user/create/",
         headers: { "Content-Type": "application/json" },
         data: JSON.stringify({
           username: this.state.username,
