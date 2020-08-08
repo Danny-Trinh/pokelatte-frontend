@@ -146,6 +146,7 @@ class App extends Component {
                   pokemons={this.state.pokemons}
                   fetchPokemon={this.fetchPokemon.bind(this)}
                   menuOff={this.menuOff}
+                  navOn={this.navOn}
                 ></YourPokemonPage>
               </Route>
               <Route path="/inventory" exact>
@@ -153,6 +154,7 @@ class App extends Component {
                   pokemons={this.state.pokemons}
                   fetchPokemon={this.fetchPokemon.bind(this)}
                   menuOff={this.menuOff}
+                  navOn={this.navOn}
                 ></YourPokemonPage>
               </Route>
               <Route path="/explore" exact>

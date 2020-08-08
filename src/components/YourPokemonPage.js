@@ -11,6 +11,7 @@ export default class YourPokemon extends Component {
   };
   componentDidMount() {
     this.props.menuOff();
+    this.props.navOn();
   }
 
   render() {

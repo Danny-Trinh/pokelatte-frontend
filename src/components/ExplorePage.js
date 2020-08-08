@@ -36,6 +36,7 @@ export default class ExplorePage extends Component {
 
   componentDidMount() {
     this.props.menuOff();
+    this.props.navOn();
   }
 
   render() {
