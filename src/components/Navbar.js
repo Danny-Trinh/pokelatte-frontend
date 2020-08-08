@@ -12,7 +12,7 @@ export default class PokeNavbar extends Component {
   //   try {
   //     await Axios({
   //       method: "post",
-  //       url: "https://pokelatte.herokuapp.com/api/pokemon/",
+  //       url: "https://pokelatte-backend.herokuapp.com/api/pokemon/",
   //       headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
   //       data: {
   //         species: pokemon,

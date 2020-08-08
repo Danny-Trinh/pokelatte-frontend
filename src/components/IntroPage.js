@@ -23,7 +23,7 @@ class IntroPage extends React.Component {
     try {
       let json = await Axios({
         method: "post",
-        url: "https://pokelatte.herokuapp.com/user/create/",
+        url: "https://pokelatte-backend.herokuapp.com/user/create/",
         headers: { "Content-Type": "application/json" },
         data: JSON.stringify({
           username: this.state.username,
@@ -133,7 +133,7 @@ class IntroPage extends React.Component {
             Start Your Adventure
           </button>
           <p className="text-xs text-gray-500">
-            (Demonstration Only) accounts are stored on device for 24 hours
+            (Demonstration Only) accounts are stored on device for 48 hours
           </p>
         </form>
       </div>
