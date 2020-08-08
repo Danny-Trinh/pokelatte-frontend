@@ -8,7 +8,7 @@ export default class StarterDetail extends Component {
   };
   render() {
     const btnClass =
-      "border-2 border-teal-500 hover:border-teal-600 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-teal-300 rounded-full my-2 m-2";
+      "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-2 m-2";
 
     return (
       <div className={`${this.props.toggleHidden()} lg:block `}>
@@ -29,7 +29,7 @@ export default class StarterDetail extends Component {
 
             <FontAwesomeIcon
               size="lg"
-              className="lg:hidden absolute right-0 m-2 text-gray-100 hover:text-red-400 ml-4 cursor-pointer border-2 border-transparent rounded-full"
+              className="lg:hidden absolute right-0 m-2 text-gray-100 ml-4 cursor-pointer border-2 border-transparent rounded-full"
               icon={faTimes}
               onClick={this.props.onExitClick}
             />
@@ -41,7 +41,7 @@ export default class StarterDetail extends Component {
           ></img>
           <div className="flex w-full w-64 justify-center relative">
             <div
-              className="border-2 border-blue-600 hover:border-blue-700 font-bold py-2 px-4 cursor-pointer bg-blue-500 hover:bg-blue-400 rounded-full my-2 m-2 capitalize"
+              className="border-2 border-blue-600 font-bold py-2 px-4 cursor-pointer bg-blue-500 rounded-full my-2 m-2 capitalize"
               onClick={() => this.onButtonClick("choose")}
             >
               Choose {this.props.pokemon.species}
@@ -97,7 +97,7 @@ export default class StarterDetail extends Component {
               ></input>
               <div className="flex mt-4">
                 <button
-                  className="border-2 border-blue-600 hover:border-blue-700 font-bold py-2 px-4 cursor-pointer bg-blue-500 hover:bg-blue-400 rounded-full mx-auto"
+                  className="border-2 border-blue-600 font-bold py-2 px-4 cursor-pointer bg-blue-500 rounded-full mx-auto"
                   type="submit"
                 >
                   Confirm

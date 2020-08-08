@@ -18,11 +18,11 @@ const textVals = {
   "4": "It's ultra effective!",
 };
 const confirmBtnClass =
-  "border-2 border-teal-500 hover:border-teal-800 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-teal-300 rounded-full my-4 mx-auto  text-center";
+  "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-4 mx-auto  text-center";
 const btnClass =
-  "border-2 border-teal-500 hover:border-teal-800 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-teal-300 rounded-full my-2 m-2";
+  "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-2 m-2";
 const disabledBtnClass =
-  "border-2 border-teal-500 hover:border-red-800 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-red-300 rounded-full my-2 m-2";
+  "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-2 m-2";
 const summmonDelay = 2;
 const staggerDelay = 1;
 const pokemonCatchDuration = 5;
@@ -416,7 +416,7 @@ export default class BattlePage extends Component {
               ></input>
               <div className="flex mt-4">
                 <button
-                  className="border-2 border-blue-600 hover:border-blue-700 font-bold py-2 px-4 cursor-pointer bg-blue-500 hover:bg-blue-400 rounded-full mx-auto"
+                  className="border-2 border-blue-600  font-bold py-2 px-4 cursor-pointer bg-blue-500  rounded-full mx-auto"
                   type="submit"
                 >
                   Confirm

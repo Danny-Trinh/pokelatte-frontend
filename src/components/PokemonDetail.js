@@ -71,9 +71,9 @@ export default class DescBox extends Component {
 
   render() {
     const btnClass =
-      "border-2 border-teal-500 hover:border-teal-600 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-teal-300 rounded-full my-2 sm:m-2 ";
+      "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-2 sm:m-2 ";
     const redBtnClass =
-      "border-2 border-teal-500 hover:border-red-600 font-bold py-2 px-4 cursor-pointer bg-teal-400 hover:bg-red-300 rounded-full my-2 sm:m-2 ";
+      "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-2 sm:m-2 ";
     // const disabledBtnClass =
     //   "border-2 bg-red-400 border-red-500 font-bold py-2 px-4 rounded-full my-2 sm:m-2";
     const { pokemon } = this.props;

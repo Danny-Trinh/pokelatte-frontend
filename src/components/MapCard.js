@@ -47,7 +47,7 @@ export default class MapCard extends Component {
   }
   getArrowDivClass() {
     let classes =
-      "flex flex-col justify-center w-8 h-8 sm:w-16 sm:h-12 rounded-full my-auto border-2 border-transparent hover:border-white cursor-pointer";
+      "flex flex-col justify-center w-8 h-8 sm:w-16 sm:h-12 rounded-full my-auto border-2 border-transparent cursor-pointer";
     classes += " bg-" + this.props.color;
     return classes;
   }

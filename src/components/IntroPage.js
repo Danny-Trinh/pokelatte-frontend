@@ -20,8 +20,8 @@ class IntroPage extends React.Component {
   // curl --header "Content-Type: application/json" -X POST https://pokelatte-backend.herokuapp.com/user/create/ --data '{"username":"testuser3","password":"Ilike2eatcheese"}'
 
   async handle_signup() {
+    localStorage.clear();
     try {
-      localStorage.clear();
       let json = await Axios({
         method: "post",
         url: "https://pokelatte-backend.herokuapp.com/user/create/",
@@ -48,7 +48,9 @@ class IntroPage extends React.Component {
         // }
         alert(errorString);
       } else if (error) {
-        alert(error);
+        alert(
+          "Hey you might be wondering how you got this error, well Danny doesnt know either ;-;"
+        );
       }
     }
   }
@@ -128,7 +130,7 @@ class IntroPage extends React.Component {
           </div>
 
           <button
-            className="bg-blue-500 text-white font-bold py-2 px-4 rounded border hover:bg-blue-600 focus:border-blue-900 focus:outline-none"
+            className="bg-blue-500 text-white font-bold py-2 px-4 rounded border focus:border-blue-900 focus:outline-none"
             type="submit"
           >
             Start Your Adventure

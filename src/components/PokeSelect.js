@@ -31,7 +31,7 @@ export default class PokeSelection extends Component {
           <div className="flex h-16 justify-center items-center ">
             <FontAwesomeIcon
               size="2x"
-              className="text-gray-100 cursor-pointer border-2 border-transparent hover:border-indigo-400 rounded-full"
+              className="text-gray-100 cursor-pointer border-2 border-transparent rounded-full"
               icon={faArrowCircleLeft}
               onClick={() => this.changePage(-1)}
             />
@@ -41,7 +41,7 @@ export default class PokeSelection extends Component {
             </div>
             <FontAwesomeIcon
               size="2x"
-              className="text-gray-100 cursor-pointer border-2 border-transparent hover:border-indigo-400 rounded-full"
+              className="text-gray-100 cursor-pointer border-2 border-transparent rounded-full"
               icon={faArrowCircleRight}
               onClick={() => this.changePage(1)}
             />

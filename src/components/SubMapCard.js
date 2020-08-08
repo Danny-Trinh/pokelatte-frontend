@@ -17,7 +17,7 @@ export default class SubMapCard extends Component {
         <p className="text-gray-700 text-base">{flavor[subMapNum]}</p>
         <div className="">
           <div
-            className="border-2 border-teal-500 hover:border-teal-800 mx-4 mt-4 bg-teal-400 hover:bg-teal-300 py-2 px-4 cursor-pointer rounded-full"
+            className="border-2 border-teal-500 mx-4 mt-4 bg-teal-400 py-2 px-4 cursor-pointer rounded-full"
             onClick={() =>
               onExploreClick(
                 lvls[subMapNum][0],
@@ -33,13 +33,13 @@ export default class SubMapCard extends Component {
           </div>
           <div className="flex justify-center">
             <div
-              className="border-2 border-teal-500  m-3 bg-teal-400 hover:bg-teal-300 py-2 px-4 cursor-pointer rounded-full font-bold"
+              className="border-2 border-teal-500  m-3 bg-teal-400 py-2 px-4 cursor-pointer rounded-full font-bold"
               onClick={() => onSubMapClick(-1)}
             >
               Previous Map
             </div>
             <div
-              className="border-2 border-teal-500 m-3 bg-teal-400 hover:bg-teal-300 py-2 px-4 cursor-pointer rounded-full font-bold"
+              className="border-2 border-teal-500 m-3 bg-teal-400 py-2 px-4 cursor-pointer rounded-full font-bold"
               onClick={() => onSubMapClick(1)}
             >
               Next Map

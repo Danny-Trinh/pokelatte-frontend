@@ -53,25 +53,19 @@ export default class PokeNavbar extends Component {
         >
           <ul className="sm:flex items-center justify-between text-md text-teal-200">
             <li>
-              <Link
-                to="/inventory"
-                className="sm:p-4 py-3 px-0 block hover:text-teal-500 "
-              >
+              <Link to="/inventory" className="sm:p-4 py-3 px-0 block">
                 Your Pokemon
               </Link>
             </li>
             <li>
-              <Link
-                to="/explore"
-                className="sm:p-4 py-3 px-0 block hover:text-teal-500 "
-              >
+              <Link to="/explore" className="sm:p-4 py-3 px-0 block">
                 Explore
               </Link>
             </li>
             <li>
               <Link
                 to="/"
-                className="sm:p-4 py-3 px-0 block hover:text-red-500"
+                className="sm:p-4 py-3 px-0 block"
                 onClick={() => this.props.handle_logout()}
               >
                 Delete Account
