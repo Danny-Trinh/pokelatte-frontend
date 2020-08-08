@@ -2,11 +2,34 @@ import React, { Component } from "react";
 import pokeball from "./pictures/pokeball.png";
 import menu from "./pictures/menu.svg";
 import { Link } from "react-router-dom";
+import pokemon from "./json/pokemon_names.json";
+// import Axios from "axios";
 
 export default class PokeNavbar extends Component {
-  state = {
-    menuLoaded: false,
-  };
+  // development only function
+  // async generatePokemon(pokemon, levelNum, trainerId) {
+  //   this.setState({ isLoading: true });
+  //   try {
+  //     await Axios({
+  //       method: "post",
+  //       url: "https://pokelatte.herokuapp.com/api/pokemon/",
+  //       headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
+  //       data: {
+  //         species: pokemon,
+  //         level: levelNum,
+  //         trainer: localStorage.getItem("id"),
+  //       },
+  //     });
+  //     this.setState({
+  //       isLoading: false,
+  //     });
+  //   } catch (error) {
+  //     this.setState({
+  //       error,
+  //       isLoading: false,
+  //     });
+  //   }
+  // }
   render() {
     return (
       <div className="py-2 sm:py-0 px-2 bg-gray-800 flex flex-wrap items-center">
@@ -23,59 +46,63 @@ export default class PokeNavbar extends Component {
           className="cursor-pointer sm:hidden block mr-2"
           src={menu}
           alt="menu"
-          onClick={this.onMenuClick}
+          onClick={this.props.onMenuClick}
         ></img>
-        <div
-          className={`sm:flex sm:items-center sm:w-auto w-full ${this.toggleHidden()}`}
+        <nav
+          className={`cursor-pointer sm:flex sm:items-center sm:w-auto w-full ${this.toggleHidden()}`}
         >
-          <nav>
-            <ul className="sm:flex items-center justify-between text-md text-teal-200">
-              <li>
-                <Link
-                  to="/inventory"
-                  className="sm:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                  href="#"
-                >
-                  Your Pokemon
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/explore"
-                  className="sm:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                  href="#"
-                >
-                  Explore
-                </Link>
-              </li>
-              {/* <li>
-                <Link
-                  to="/gacha"
-                  className="sm:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                  href="#"
-                >
-                  Pull Gacha
-                </Link>
-              </li> */}
-            </ul>
-          </nav>
-          <a href="#">
-            <img
-              className="inline rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400"
-              src="https://pbs.twimg.com/profile_images/1128143121475342337/e8tkhRaz_normal.jpg"
-            ></img>
-          </a>
-        </div>
+          <ul className="sm:flex items-center justify-between text-md text-teal-200">
+            <li>
+              <Link
+                to="/inventory"
+                className="sm:p-4 py-3 px-0 block hover:text-teal-500 "
+              >
+                Your Pokemon
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/explore"
+                className="sm:p-4 py-3 px-0 block hover:text-teal-500 "
+              >
+                Explore
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                className="sm:p-4 py-3 px-0 block hover:text-red-500"
+                onClick={() => this.props.handle_logout()}
+              >
+                Delete Account
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     );
   }
-  onMenuClick = () => {
-    this.setState({
-      menuLoaded: !this.state.menuLoaded,
-    });
-  };
 
   toggleHidden = () => {
-    return this.state.menuLoaded ? "" : "hidden";
+    return this.props.menuLoaded ? "" : "hidden";
   };
+
+  genPokemon = (num) => {
+    for (let i = 0; i < num; i++) {
+      this.generatePokemon(
+        generatePokemonString(pokemon.all),
+        randRange(1, 100),
+        1
+      );
+    }
+  };
+}
+function generatePokemonString(pokemons) {
+  const arrayNum = randRange(0, pokemons.length - 1);
+  return pokemons[arrayNum];
+}
+
+function randRange(min, max) {
+  let randomNum = Math.random() * (max - min) + min;
+  return Math.floor(randomNum);
 }

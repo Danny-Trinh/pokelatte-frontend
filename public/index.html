@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="select-none flex flex-col min-h-full" lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/latte.ico" />
@@ -27,9 +27,15 @@
     <title>Pok&eacute;latte</title>
   </head>
 
-  <body class="bg-blue-700 select-none">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div
+      id="root"
+      class="select-none flex flex-col min-h-screen"
+      style="
+        background: linear-gradient(180deg, #40e0f5 0%, rgb(211, 9, 225) 100%);
+      "
+    ></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

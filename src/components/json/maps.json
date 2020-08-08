@@ -1,0 +1,196 @@
+[
+  {
+    "color": "red-900",
+    "img": "https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=628&q=80",
+    "alt": "Mt. Chimney",
+    "subMaps": [
+      "Lavaridge Town",
+      "Cable Car",
+      "Fiery Path",
+      "Heart of the Mountain"
+    ],
+    "flavor": [
+      "A nearby town covered in ashen soot. You stumble upon some scared pokemon.",
+      "You decide to explore the Mountain and take a cable car up the mountain.",
+      "You found a path nearby leading deeper into the mountain.",
+      "A terrifying roar can be heard from the depths of the mountain."
+    ],
+    "lvls": [
+      [5, 15],
+      [20, 30],
+      [30, 50],
+      [70, 90]
+    ],
+    "pokemon": "fire",
+    "legendaries": "volcano_L"
+  },
+  {
+    "color": "blue-900",
+    "img": "https://images.unsplash.com/photo-1490143921278-d853145e4977?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80",
+    "alt": "Frozen Tundra",
+    "subMaps": [
+      "Teal City",
+      "Snowy Paradise",
+      "Aurora Cliffs",
+      "What was that?!"
+    ],
+    "flavor": [
+      "Enter Teal City, the most vibrant city in the North said to be protected by a giant ice dragon",
+      "Explore some of the scenic routes of Teal City. The snowy forests captivate and fill you with determination.",
+      "You go up Aurora cliffs and watch the night sky come to life. The lights mesmerize people and pokemon alike",
+      "You think you saw something large fly this way. Off in the distance you hear a chilling screech."
+    ],
+    "lvls": [
+      [15, 30],
+      [30, 50],
+      [50, 70],
+      [70, 80]
+    ],
+    "pokemon": "ice_dragon",
+    "legendaries": "glacier_L"
+  },
+  {
+    "color": "gray-600",
+    "img": "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
+    "alt": "Abandoned Factory",
+    "subMaps": [
+      "Start Investigation",
+      "Strange Passage",
+      "Suspicious Equipment",
+      "Ominous Cage"
+    ],
+    "flavor": [
+      "The local city has employed you to investigate this factory. Suspicious rumblings underneath can be felt and is your first lead",
+      "You find a trap door underneath a carpet with a giant red 'R'on it. As you make your way down the secret passage, you wonder if the R stood for something.",
+      "You suspect this Laboratory was used for testing on pokemon. Many computers and test tubes can be found with labels of different pokemon dna.",
+      "A large cage lays broken on the floor, you hear deafening roar in the next room that shakes the labratory. Whatever was kept in the cage does not seem happy."
+    ],
+    "lvls": [
+      [30, 40],
+      [40, 50],
+      [50, 70],
+      [80, 100]
+    ],
+    "pokemon": "electric_steel_psychic",
+    "legendaries": "factory_L"
+  },
+  {
+    "color": "yellow-800",
+    "img": "https://images.unsplash.com/photo-1535940360221-641a69c43bac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80",
+    "alt": "Wild Safari",
+    "subMaps": ["Safari Tour", "Circle of Life", "Detour", "Run Away!"],
+    "flavor": [
+      "You pay for a tour of the great safari in the Kanto region.",
+      "Many pokemon start breaking into song, weird.",
+      "Your tour guide takes you on a detour to show you rare pokemon.",
+      "The ground trembles and you think its a stampede but its a giant pokemon, RUN!!!"
+    ],
+    "lvls": [
+      [5, 15],
+      [20, 40],
+      [40, 50],
+      [50, 70]
+    ],
+    "pokemon": "normal_flying",
+    "legendaries": "safari_L"
+  },
+  {
+    "color": "green-900",
+    "img": "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjU1NzQ5fQ&auto=format&fit=crop&w=1350&q=80",
+    "alt": "Leaf Forest",
+    "subMaps": ["BUGSS", "SO MANY BUGS", "Forest Fire?", "BUGS"],
+    "flavor": [
+      "You hate bugs, there is alot of bugs here. Oh wow look a giant snake, I hope that it is friendly (it is not).",
+      "You brought bear spray but not bug spray, unfortunate. A giant bug tries to befriend you and you immediately attack it.",
+      "Maybe you should just set everything on fire, seems like a good solution. Yes, all bugs must die, it is mercy.",
+      "Guardians of the forest sense your dark thoughts and try to stop you. The hardest choices, require the strongest wills."
+    ],
+    "lvls": [
+      [5, 15],
+      [20, 30],
+      [30, 50],
+      [50, 70]
+    ],
+    "pokemon": "leaf_bug_poison",
+    "legendaries": "forest_L"
+  },
+  {
+    "color": "gray-800",
+    "img": "https://images.unsplash.com/photo-1572587356426-b33bf42f999b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+    "alt": "Dark Cave",
+    "subMaps": ["Spelunking", "Cool Stalagmites", "Steep Fall", "Behind You"],
+    "flavor": [
+      "Being super proactive, you decide to go spelunking for no reason.",
+      "You admire the vibrant ecosystem of such a secluded place.",
+      "You take a picture of some stalagmites but end up dropping your phone deep in the cave.",
+      "You retrieve your phone and it somehow didnt crack. As you lift your phone, your phone catches the reflection of something behind you, OH NO!"
+    ],
+    "lvls": [
+      [5, 20],
+      [20, 30],
+      [30, 50],
+      [60, 80]
+    ],
+    "pokemon": "ground_rock",
+    "legendaries": "cave_L"
+  },
+  {
+    "color": "blue-400",
+    "img": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "alt": "Beach Island",
+    "subMaps": ["Vacation", "Fishing", "Memories", "Big Ol Fish"],
+    "flavor": [
+      "You take a vacation visiting your hometown island.",
+      "You and your dad used to fish in this 'secret location' next to town.",
+      "Memories of fishing with your late dad flash by in your head.",
+      "Distracted by your sweet thoughts, you fail to see the massive figure rising to the surface right in front of you."
+    ],
+    "lvls": [
+      [20, 30],
+      [30, 40],
+      [50, 70],
+      [70, 80]
+    ],
+    "pokemon": "water_fairy",
+    "legendaries": "beach_L"
+  },
+  {
+    "color": "indigo-900",
+    "img": "https://images.unsplash.com/photo-1542071519-65d063713e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "alt": "Old Chateau",
+    "subMaps": ["Spooky", "Scary Thoughts", "Bathroom Ritual", "It Worked!"],
+    "flavor": [
+      "Stunned at your discovery of a abandoned mansion, you decide to break into it. Maybe you'll find some ghosts.",
+      "You wonder what ghost pokemon were before they died. Maybe they were born as ghosts.",
+      "Bored out of you mind, you decide to recite Mary Bloody three times in front of a bloody mirror.",
+      "You see a dark figure in the mirror appear behind you, you throw your pokeball at it before it can do something scary."
+    ],
+    "lvls": [
+      [20, 30],
+      [30, 40],
+      [40, 50],
+      [60, 80]
+    ],
+    "pokemon": "ghost_dark",
+    "legendaries": "chateau_L"
+  },
+  {
+    "color": "gray-500",
+    "img": "https://images.unsplash.com/photo-1462747772350-460bb4aad7f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "alt": "Colosseum",
+    "subMaps": ["Giant Building", "Warriors", "Sign Me Up!", "Final Match"],
+    "flavor": [
+      "What is this gigantic stadium? It looks like something out of ancient civilization.",
+      "Amazing fights are held in the Colosseum everyday, would you like to join warrior?",
+      "You decide to test your luck in the arena, you pokemon seem determined to win.",
+      "Here it is ladies and gentleman, the match you have all been waiting for!"
+    ],
+    "lvls": [
+      [30, 50],
+      [50, 70],
+      [80, 90]
+    ],
+    "pokemon": "fighting",
+    "legendaries": "colosseum_L"
+  }
+]

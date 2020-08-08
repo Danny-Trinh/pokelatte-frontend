@@ -1,0 +1,16 @@
+Some things to mention in my blog:
+Used Create-React-App, but if did it again would just install what was neededed and store it with my django files
+Working with PokeApi
+Django Backend
+Heroku as host
+Tailwind as CSS framework
+React as front end
+Api fetching best practices
+Pokemon Algorithms
+UI/UX design
+User Authentication
+Player's Assets and how i manage them
+framer-motion (HOLY POGGERS)
+font awesome
+JSON Web Tokens (jwt) for user authentication 
+
