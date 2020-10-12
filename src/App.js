@@ -73,7 +73,7 @@ class App extends Component {
       try {
         const json = await Axios({
           method: "get",
-          url: "/api/user/",
+          url: "https://pokelatte-backend.herokuapp.com/api/user/",
           headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
         });
         localStorage.setItem("username", json.data[0].username);
