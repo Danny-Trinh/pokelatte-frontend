@@ -30,7 +30,7 @@ class App extends Component {
     try {
       const json = await Axios({
         method: "get",
-        url: "/api/pokemon/",
+        url: "https://pokelatte-backend.herokuapp.com/api/pokemon/",
         headers: { Authorization: `JWT ${localStorage.getItem("token")}` },
       });
       if (json.data.length !== 0) {
@@ -71,7 +71,6 @@ class App extends Component {
     if (localStorage.getItem("token")) {
       this.setState({ isLoading: true });
       try {
-        console.log("hi");
         const json = await Axios({
           method: "get",
           url: "https://pokelatte-backend.herokuapp.com/api/user/",
