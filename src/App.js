@@ -71,6 +71,7 @@ class App extends Component {
     if (localStorage.getItem("token")) {
       this.setState({ isLoading: true });
       try {
+        console.log("hi");
         const json = await Axios({
           method: "get",
           url: "https://pokelatte-backend.herokuapp.com/api/user/",
