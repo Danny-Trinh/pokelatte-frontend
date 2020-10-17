@@ -10,12 +10,12 @@ import { Redirect } from "react-router-dom";
 import Axios from "axios";
 
 const textVals = {
-  "0": "It had no effect ...",
-  "0.25": "It barely did anything...",
-  "0.5": "It's not very effective...",
-  "2": "It's super effective!",
-  "1": "",
-  "4": "It's ultra effective!",
+  0: "It had no effect ...",
+  0.25: "It barely did anything...",
+  0.5: "It's not very effective...",
+  2: "It's super effective!",
+  1: "",
+  4: "It's ultra effective!",
 };
 const confirmBtnClass =
   "border-2 border-teal-500 font-bold py-2 px-4 cursor-pointer bg-teal-400 rounded-full my-4 mx-auto  text-center";
